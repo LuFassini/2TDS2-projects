@@ -8,6 +8,9 @@
 
 body{
     background-color: #f0f0f0;
+    background-image: url(../assets/imagens/Wallpaper-Byte-Buster.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1 {
@@ -29,6 +32,7 @@ main{
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #fff;
+    opacity: 80%;
 }
 
 label,

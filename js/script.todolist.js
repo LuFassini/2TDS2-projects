@@ -31,11 +31,11 @@ function savePost() {
 }
 
 function cleanFields(){
-    const title = document.getElementById("title").value = "";
-    const category = document.getElementById("category").value = "";
-    const resume = document.getElementById("resume").value = "";
-    const author = document.getElementById("author").value = "";
-    const date = document.getElementById("date").value = "";
+    document.getElementById("title").value = "";
+    document.getElementById("category").value = "";
+    document.getElementById("resume").value = "";
+    document.getElementById("author").value = "";
+    document.getElementById("date").value = "";
 
 }
 
@@ -50,7 +50,6 @@ function storePost (title,category,resume,author,date){
     };
         posts.push(post);
 
-        console.log(posts);
 }
 
 function showPosts(){
@@ -85,12 +84,12 @@ function editPost(index){
     document.getElementById("author").value = post.author;
     document.getElementById("date").value = post.date;
 
-    postIndex = index;
+    postindex = index;
 
 }
 
 function removePost(index){
-     posts.slice(index,1);
+     posts.splice(index, 1);
      showPosts();
 
      if (posts.length == 0){
