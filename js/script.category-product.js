@@ -1,4 +1,4 @@
-//
+//criaçao de categorias
 class category {
     constructor (id,name){
         this.id = id;
@@ -14,5 +14,18 @@ class Product {
         this.name = name;
         this.price = price;
         this.category = category;
+    }
+}
+
+//Serviço, validaçoes, consulta
+class CategoryService {
+    constructor(){  //n tem nada para adicionar 
+        this.categories = [];
+        this.nextCategoryId = 0;
+    }
+    
+    addCategory(name){ 
+        const id = this.nextCategoryId++;
+        const category = new Category (id,name);
     }
 }
