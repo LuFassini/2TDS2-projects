@@ -96,3 +96,14 @@ function removePost(index){
         document.getElementById("list").classList.add("hidden");
      }
 }
+
+let personSimple = "Luana Fassini";
+
+const personObject = new Object();
+personObject.firstName = "Luana";
+personObject.lastName = "Fassini";
+personObject.age = 16;
+personObject.eyeColor = "brown";
+
+console.log(personSimple);
+console.log(personObject);
